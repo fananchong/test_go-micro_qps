@@ -7,3 +7,6 @@
 - grpc
 
   ![p1](asset/grpc.jpg)
+  ![p2](asset/cpu.jpg)
+
+  结论： 4w/s 级别，CPU占用太高了
