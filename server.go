@@ -37,11 +37,14 @@ func main() {
 	hello.RegisterSayHandler(service.Server(), new(say))
 
 	go func() {
+		var t = time.Now().UnixNano() / 1e6
 		for {
 			select {
 			case <-time.After(time.Second * 5):
-				log.Print("count: ", counter)
-				atomic.StoreInt64(&counter, 0)
+				now := time.Now().UnixNano() / 1e6
+				v := atomic.SwapInt64(&counter, 0)
+				log.Print("count: ", float64(v)/float64((now-t)/1000), "/s")
+				t = now
 			}
 		}
 	}()
