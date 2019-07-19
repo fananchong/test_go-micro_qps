@@ -12,6 +12,9 @@
 
 进程数： 1 服务器 ； 20 客户端
 
+启动脚本： [test.sh](test.sh) ; 如 ./test.sh grpc
+
+
 - grpc
 
   ![p1](asset/grpc.jpg)
