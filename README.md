@@ -4,6 +4,14 @@
 
 ## 回显测试
 
+测试代码：
+- [server.go](server.go)
+- [client.go](client.go)
+
+机器配置： CPU 32核 ； 主频 2599.994
+
+进程数： 1 服务器 ； 20 客户端
+
 - grpc
 
   ![p1](asset/grpc.jpg)
