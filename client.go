@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"fmt"
 	"time"
 
 	hello "github.com/micro/examples/greeter/srv/proto/hello"
@@ -21,14 +20,13 @@ func main() {
 
 	for {
 		// Make request
-		rsp, err := cl.Hello(context.Background(), &hello.Request{
+		_, err := cl.Hello(context.Background(), &hello.Request{
 			Name: "John",
 		})
 		if err == nil {
-			fmt.Println(rsp.Msg)
+			//fmt.Println(rsp.Msg)
 		} else {
 			time.Sleep(time.Second)
 		}
 	}
 }
-
