@@ -10,17 +10,18 @@ CLI=$3
 
 cd bin
 
-nohup ./client --server=$SRV --client=$CLI --transport=$TRANS > /dev/null 2>&1 &
-nohup ./client --server=$SRV --client=$CLI --transport=$TRANS > /dev/null 2>&1 &
-nohup ./client --server=$SRV --client=$CLI --transport=$TRANS > /dev/null 2>&1 &
-nohup ./client --server=$SRV --client=$CLI --transport=$TRANS > /dev/null 2>&1 &
-nohup ./client --server=$SRV --client=$CLI --transport=$TRANS > /dev/null 2>&1 &
-nohup ./client --server=$SRV --client=$CLI --transport=$TRANS > /dev/null 2>&1 &
-nohup ./client --server=$SRV --client=$CLI --transport=$TRANS > /dev/null 2>&1 &
-nohup ./client --server=$SRV --client=$CLI --transport=$TRANS > /dev/null 2>&1 &
-nohup ./client --server=$SRV --client=$CLI --transport=$TRANS > /dev/null 2>&1 &
-nohup ./client --server=$SRV --client=$CLI --transport=$TRANS > /dev/null 2>&1 &
+nohup ./client --transport=$TRANS > /dev/null 2>&1 &
+nohup ./client --transport=$TRANS > /dev/null 2>&1 &
+nohup ./client --transport=$TRANS > /dev/null 2>&1 &
+nohup ./client --transport=$TRANS > /dev/null 2>&1 &
+nohup ./client --transport=$TRANS > /dev/null 2>&1 &
+nohup ./client --transport=$TRANS > /dev/null 2>&1 &
+nohup ./client --transport=$TRANS > /dev/null 2>&1 &
+nohup ./client --transport=$TRANS > /dev/null 2>&1 &
+nohup ./client --transport=$TRANS > /dev/null 2>&1 &
+nohup ./client --transport=$TRANS > /dev/null 2>&1 &
 
-./server --server=$SRV --client=$CLI --transport=$TRANS
+
+./server --transport=$TRANS
 
 
