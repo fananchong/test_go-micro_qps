@@ -4,28 +4,23 @@
 
 ## 回显测试
 
-测试代码：
-- [server.go](server.go)
-- [client.go](client.go)
+- 测试代码：
+  - [server.go](server.go)
+  - [client.go](client.go)
 
-机器配置： CPU 16核 ； 主频 2600
-
-进程数： 1 服务器 ； 20 客户端
-
-启动脚本： [test.sh](test.sh) ; 如 ./test.sh grpc
-
-
-- grpc
-
+- 机器配置： CPU 16核 ； 主频 2600
+- 进程数： 1 服务器 ； 20 客户端
+- 启动脚本： [test.sh](test.sh) ; 如 ./test.sh grpc
+- qps 3.5w/s
+- 服务器程序 CPU 占 30.7% （ 491.4 / 1600 ）
+- 数据截图：
   ![p1](asset/grpc.jpg)
   ![p2](asset/cpu.jpg)
 
 
 ## 结论
 
-- qps 3.5w/s
-- 服务器程序 CPU 占 30.7% （ 491.4 / 1600 ）
-- qps 太低了
+qps 太低了
 
 ## 对比其他测试
 
