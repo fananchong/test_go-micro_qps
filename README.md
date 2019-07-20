@@ -8,7 +8,7 @@
 - [server.go](server.go)
 - [client.go](client.go)
 
-机器配置： CPU 32核 ； 主频 2599.994
+机器配置： CPU 16核 ； 主频 2600
 
 进程数： 1 服务器 ； 20 客户端
 
@@ -20,4 +20,18 @@
   ![p1](asset/grpc.jpg)
   ![p2](asset/cpu.jpg)
 
-  结论： 4w/s 级别，CPU占用太高了
+
+## 结论
+
+- qps 3.5w/s
+- 服务器程序 CPU 占 30.7% （ 491.4 / 1600 ）
+- qps 太低了
+
+## 对比其他测试
+
+见： https://github.com/fananchong/gotcp#%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95
+
+
+## 分析
+
+见： https://blog.csdn.net/u013272009/article/details/96477194
